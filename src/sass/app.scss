@@ -1,0 +1,108 @@
+@import "reset";
+@import "variables";
+@import "base";
+@import "plugins/owl.carousel.min.css";
+@import "plugins/owl.theme.default.min.css";
+
+html,
+body {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+header{
+    position: relative;
+    nav{
+        position: absolute;
+        z-index: 99;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .sidebar-menu{
+            background: url(../img/sidebar-menu-bg.jpeg) no-repeat;
+            background-size: cover;
+            padding: 25px;
+            .open-menu{
+                padding: 24px;
+                background-color: $green-color;
+                cursor: pointer;
+                width: 24px;
+                margin-left: auto;
+                #sidebar-open{
+                    color: $blue-color;
+                    font-size: 24px;
+                }
+            }
+            &.open{
+                width: 450px;
+                height: 100vh;
+            }
+            .menu{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .navbar{
+                    width: 100%;
+                    .sidebar-logo{
+                        width: 300px;
+                        padding-bottom: 50px;
+                        margin: auto;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    ul{
+                        border-left: #fff 1px solid;
+                        .navbar-item{
+                            padding: 10px 40px;
+                            position: relative;
+                            &::before{
+                                content: "";
+                                background: #fff;
+                                position: absolute;
+                                left: -5px;
+                                top: 17px;
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 50%;
+                                -webkit-border-radius: 50%;
+                                transition: 0.3s;
+                            }
+                            a{
+                                color: $white-color;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .header-logo{
+            .logo{
+                width: 200px;
+                padding: 24px;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+section{
+    &.hero{
+        .hero-slider{
+            .slider-image{
+                height: 100vh;
+                // max-height: 750px;
+
+                img{
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
