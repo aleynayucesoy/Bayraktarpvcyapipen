@@ -38,18 +38,29 @@
     <link rel="stylesheet" href="css/bundle.css">
 </head>
 
-<body class="">
+<body class="dmenu-close">
     <div class="wrapper">
         {{> partials/header }}
-        <main>
-            <section class="hero">
-                <div class="hero-slider owl-carousel owl-theme">
-                    <div class="slider-image"> <img src="img/slider-img1.jpeg" alt=""> </div>
-                    <div class="slider-image"> <img src="img/slider-img2.jpeg" alt=""> </div>
-                    <div class="slider-image"> <img src="img/slider-img3.jpeg" alt=""> </div>
-                </div>
-            </section>
-        </main>
+        <div class="header-logo">
+            <div class="logo">
+                <img src="img/logo.png" alt="Bayrakdar PVC & YAPI PEN" />
+            </div>
+        </div>
+        <div class="content-shrink">
+            <main>
+                <section class="hero" id="home">
+                    <div class="hero-slider owl-carousel owl-theme">
+                        <div class="slider-image"> <img src="img/slider-img1.jpeg" alt=""> </div>
+                        <div class="slider-image"> <img src="img/slider-img2.jpeg" alt=""> </div>
+                        <div class="slider-image"> <img src="img/slider-img3.jpeg" alt=""> </div>
+                    </div>
+                </section>
+
+                <section id="about-us">
+
+                </section>
+            </main>
+        </div>
         {{> partials/footer }}
     </div>
 
