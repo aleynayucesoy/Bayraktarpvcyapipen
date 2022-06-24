@@ -321,10 +321,27 @@ section {
         height: 100vh;
         // max-height: 750px;
 
+        // background: transparent none no-repeat 50% 50%;
+        // background-size: cover;
+        // position: absolute;
+        // visibility: hidden;
+        // opacity: 0;
+        // transform: scale(1.2, 1.2);
+
         img {
           height: 100%;
         }
       }
+      // .owl-item{
+      //   &.active{
+      //     .slider-image{
+      //       transition: transform 8000ms ease-out 0s, opacity 800ms ease 0s;
+      //       opacity: 1;
+      //       transform: scale(1, 1);
+      //       z-index: 2;
+      //     }
+      //   }
+      // }
     }
   }
 
